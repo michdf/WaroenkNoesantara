@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dgyprfbgvs61a"
+path="res://.godot/imported/a2e5395695792ff9996b33d086f3ff91.obj-47ba0e83f14f6a7f8d44b95f0933457f.mesh"
+
+[deps]
+
+files=["res://.godot/imported/a2e5395695792ff9996b33d086f3ff91.obj-47ba0e83f14f6a7f8d44b95f0933457f.mesh"]
+
+source_file="res://Assets/Models/Characters/MC/MC-Male/a2e5395695792ff9996b33d086f3ff91.obj"
+dest_files=["res://.godot/imported/a2e5395695792ff9996b33d086f3ff91.obj-47ba0e83f14f6a7f8d44b95f0933457f.mesh", "res://.godot/imported/a2e5395695792ff9996b33d086f3ff91.obj-47ba0e83f14f6a7f8d44b95f0933457f.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

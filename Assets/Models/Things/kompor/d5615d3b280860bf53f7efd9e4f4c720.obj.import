@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bkios1ea1tvqq"
+path="res://.godot/imported/d5615d3b280860bf53f7efd9e4f4c720.obj-5c8f5eef6925f0b51255466b7dd005d4.mesh"
+
+[deps]
+
+files=["res://.godot/imported/d5615d3b280860bf53f7efd9e4f4c720.obj-5c8f5eef6925f0b51255466b7dd005d4.mesh"]
+
+source_file="res://Assets/Models/Things/kompor/d5615d3b280860bf53f7efd9e4f4c720.obj"
+dest_files=["res://.godot/imported/d5615d3b280860bf53f7efd9e4f4c720.obj-5c8f5eef6925f0b51255466b7dd005d4.mesh", "res://.godot/imported/d5615d3b280860bf53f7efd9e4f4c720.obj-5c8f5eef6925f0b51255466b7dd005d4.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

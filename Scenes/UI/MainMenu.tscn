@@ -1,0 +1,79 @@
+[gd_scene load_steps=4 format=3 uid="uid://coh6vtqtist0x"]
+
+[ext_resource type="Script" path="res://Scenes/UI/MainMenuUI.cs" id="1_25y0o"]
+[ext_resource type="Texture2D" uid="uid://wdhj6hhw5bj5" path="res://Assets/Textures/Restoran_Jawa1.width-800.format-webp.webp" id="1_va3e8"]
+
+[sub_resource type="SystemFont" id="SystemFont_a163h"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -1152.0
+offset_bottom = -648.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_25y0o")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 2
+offset_right = 1152.0
+offset_bottom = 645.0
+texture = ExtResource("1_va3e8")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 342.0
+offset_top = 83.0
+offset_right = 846.0
+offset_bottom = 179.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(0.744031, 0.462477, 1.34766e-06, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/line_spacing = 0
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 0
+theme_override_constants/outline_size = 40
+theme_override_constants/shadow_outline_size = 0
+theme_override_fonts/font = SubResource("SystemFont_a163h")
+theme_override_font_sizes/font_size = 50
+text = "Waroenk"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 268.0
+offset_top = 241.0
+offset_right = 927.0
+offset_bottom = 491.0
+
+[node name="PlayButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 4
+text = "PLAY
+"
+
+[node name="HelpButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "HELP
+"
+
+[node name="CreditButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "CREDIT"
+
+[node name="QuitButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "QUIT"

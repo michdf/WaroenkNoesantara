@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://b34jmu6qxwt58"]
+
+[ext_resource type="ArrayMesh" uid="uid://dwc5s8g8i82t5" path="res://Assets/Models/Things/lampu pijar/d369d45dab26bd2cf5ca858dfb605b87.obj" id="1_7tg6m"]
+
+[node name="Lampu" type="Node3D"]
+
+[node name="D369d45Dab26Bd2Cf5Ca858Dfb605b87" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.999832, -0.0183249, 0, 0.0183249, 0.999832, 0, 0.576426, 0)
+mesh = ExtResource("1_7tg6m")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.387443, 0.0199561)
+light_color = Color(1, 0.717647, 0.333333, 1)
+light_energy = 16.0
+light_size = 0.086
+omni_range = 270.487

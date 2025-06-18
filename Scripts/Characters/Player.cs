@@ -8,8 +8,8 @@ public partial class Player : CharacterBody3D
     private float _speed;
     
     [ExportGroup("Movement variables")]
-    [Export] public float WalkSpeed { get; set; } = 2.0f;
-    [Export] public float RunSpeed { get; set; } = 5.0f;
+    [Export] public float WalkSpeed { get; set; } = 5.0f;
+    [Export] public float RunSpeed { get; set; } = 10.0f;
     [Export] public float JumpStrength { get; set; } = 15.0f;
     [Export] public float Gravity { get; set; } = 50.0f;
     

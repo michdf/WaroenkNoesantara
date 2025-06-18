@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://ddtdt20p3v0pi"
+path="res://.godot/imported/c337089d28fffdacb336a39858221673.obj-3b70918d696877ff3a76e80c6ba1802b.mesh"
+
+[deps]
+
+files=["res://.godot/imported/c337089d28fffdacb336a39858221673.obj-3b70918d696877ff3a76e80c6ba1802b.mesh"]
+
+source_file="res://Assets/Models/Things/rumahWarung/c337089d28fffdacb336a39858221673.obj"
+dest_files=["res://.godot/imported/c337089d28fffdacb336a39858221673.obj-3b70918d696877ff3a76e80c6ba1802b.mesh", "res://.godot/imported/c337089d28fffdacb336a39858221673.obj-3b70918d696877ff3a76e80c6ba1802b.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

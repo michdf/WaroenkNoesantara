@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://b2brfrbsegmpm"]
+
+[ext_resource type="ArrayMesh" uid="uid://8yhowpifi4gl" path="res://Assets/Models/Characters/Trader/tengkulak-young/ba3d45fe01557690357d19c4867a5a38.obj" id="1_aq3jp"]
+[ext_resource type="Script" path="res://Scripts/Characters/TengkulangMuda.cs" id="1_esc3v"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_o1br7"]
+
+[node name="TradeFnB" type="Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.019928, 0.589605, 0)
+script = ExtResource("1_esc3v")
+
+[node name="Ba3d45Fe01557690357d19c4867a5a38" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0189148, 0, 0.0183675)
+mesh = ExtResource("1_aq3jp")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
+shape = SubResource("SphereShape3D_o1br7")
+
+[connection signal="body_entered" from="." to="." method="OnBodyEntered"]
+[connection signal="body_exited" from="." to="." method="OnBodyExited"]
