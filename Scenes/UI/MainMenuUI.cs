@@ -24,19 +24,19 @@ public partial class MainMenuUI : Control
         quitButton.Pressed += OnQuitPressed;
         
         // Setup UI
-        titleLabel.Text = "Restaurant Rush";
+        titleLabel.Text = "Waroenk Noesantara";
     }
     
     private void OnPlayPressed()
     {
 		GD.Print("Play button pressed");
-        GetTree().ChangeSceneToFile("res://scenes/ui/DifficultySelect.tscn");
+        GetTree().ChangeSceneToFile("res://Scenes/Levels/prototype.tscn");
     }
     
     private void OnHelpPressed()
     {
 		GD.Print("Help button pressed");
-        GetTree().ChangeSceneToFile("res://scenes/ui/Help.tscn");
+        GetTree().ChangeSceneToFile("res://scenes/UI/Help.tscn");
     }
 	
 	private void OnCreditPressed()

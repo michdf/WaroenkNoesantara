@@ -1,0 +1,14 @@
+CollisionShape3D
+Label
+VBoxContainer
+Control
+StaticBody3D
+TerraBrush
+WorldEnvironment
+OmniLight3D
+Area3D
+TextureRect
+Button
+DirectionalLight3D
+Camera3D
+BoneAttachment3D

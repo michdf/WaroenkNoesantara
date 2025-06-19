@@ -1,19 +1,3 @@
-[gd_scene load_steps=4 format=3 uid="uid://c3w6arcwfxhyl"]
-
-[ext_resource type="ArrayMesh" uid="uid://b4q6ixb3nwe4u" path="res://Assets/Models/Things/kendi/1dae5c92bf480d9eacbbb3a8be9edb79.obj" id="1_8he4a"]
-[ext_resource type="Script" path="res://Scripts/Things/MakeDrink.cs" id="1_ryndc"]
-
-[sub_resource type="SphereShape3D" id="SphereShape3D_tk2x3"]
-radius = 0.40461
-
-[node name="MakeDrink" type="Area3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.285603, 0)
-script = ExtResource("1_ryndc")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
-shape = SubResource("SphereShape3D_tk2x3")
-
-[node name="1Dae5c92Bf480d9Eacbbb3a8Be9Edb79" type="MeshInstance3D" parent="."]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -0.0115966, 0, -0.0264605)
-mesh = ExtResource("1_8he4a")
+version https://git-lfs.github.com/spec/v1
+oid sha256:74e224a45fbb0b2f5dded536fe68ced5f9c9b143f6c4341cc18141c4b7a42f6a
+size 873

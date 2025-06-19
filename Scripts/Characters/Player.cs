@@ -33,8 +33,6 @@ public partial class Player : CharacterBody3D
         moveDirection.Z = Input.GetActionStrength("move_backwards") - Input.GetActionStrength("move_forwards");
         moveDirection = moveDirection.Rotated(Vector3.Up, _springArmPivot.Rotation.Y);
         
-        Velocity = new Vector3(Velocity.X, Velocity.Y - Gravity * (float)delta, Velocity.Z);
-        
         if (Input.IsActionPressed("run"))
         {
             _speed = RunSpeed;
@@ -44,7 +42,7 @@ public partial class Player : CharacterBody3D
             _speed = WalkSpeed;
         }
         
-        Velocity = new Vector3(moveDirection.X * _speed, Velocity.Y, moveDirection.Z * _speed);
+        Velocity = new Vector3(moveDirection.X * _speed, Velocity.Y - Gravity * (float)delta, moveDirection.Z * _speed);
         
         if (moveDirection != Vector3.Zero)
         {
@@ -68,37 +66,37 @@ public partial class Player : CharacterBody3D
         
         ApplyFloorSnap();
         MoveAndSlide();
-        Animate((float)delta);
+        // Animate((float)delta);
     }
     
-    private void Animate(float delta)
-    {
-        if (IsOnFloor())
-        {
-            _animator.Set("parameters/ground_air_transition/transition_request", "grounded");
+//     private void Animate(float delta)
+//     {
+//         if (IsOnFloor())
+//         {
+//             _animator.Set("parameters/ground_air_transition/transition_request", "grounded");
             
-            if (Velocity.Length() > 0)
-            {
-                if (_speed == RunSpeed)
-                {
-                    _animator.Set("parameters/iwr_blend/blend_amount", 
-                        Mathf.Lerp(_animator.Get("parameters/iwr_blend/blend_amount").AsSingle(), 1.0f, delta * AnimationBlend));
-                }
-                else
-                {
-                    _animator.Set("parameters/iwr_blend/blend_amount", 
-                        Mathf.Lerp(_animator.Get("parameters/iwr_blend/blend_amount").AsSingle(), 0.0f, delta * AnimationBlend));
-                }
-            }
-            else
-            {
-                _animator.Set("parameters/iwr_blend/blend_amount", 
-                    Mathf.Lerp(_animator.Get("parameters/iwr_blend/blend_amount").AsSingle(), -1.0f, delta * AnimationBlend));
-            }
-        }
-        else
-        {
-            _animator.Set("parameters/ground_air_transition/transition_request", "air");
-        }
-    }
+//             if (Velocity.Length() > 0)
+//             {
+//                 if (_speed == RunSpeed)
+//                 {
+//                     _animator.Set("parameters/iwr_blend/blend_amount", 
+//                         Mathf.Lerp(_animator.Get("parameters/iwr_blend/blend_amount").AsSingle(), 1.0f, delta * AnimationBlend));
+//                 }
+//                 else
+//                 {
+//                     _animator.Set("parameters/iwr_blend/blend_amount", 
+//                         Mathf.Lerp(_animator.Get("parameters/iwr_blend/blend_amount").AsSingle(), 0.0f, delta * AnimationBlend));
+//                 }
+//             }
+//             else
+//             {
+//                 _animator.Set("parameters/iwr_blend/blend_amount", 
+//                     Mathf.Lerp(_animator.Get("parameters/iwr_blend/blend_amount").AsSingle(), -1.0f, delta * AnimationBlend));
+//             }
+//         }
+//         else
+//         {
+//             _animator.Set("parameters/ground_air_transition/transition_request", "air");
+//         }
+//     }
 }

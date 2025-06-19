@@ -1,15 +1,3 @@
-[gd_scene load_steps=3 format=3 uid="uid://bdej8netxflgh"]
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_o6mm1"]
-transparency = 1
-albedo_color = Color(0, 0.333333, 0.788235, 0.780392)
-
-[sub_resource type="SphereMesh" id="SphereMesh_3cr7o"]
-radius = 4.0
-height = 8.0
-
-[node name="SetAngleInitialPoint" type="Node3D"]
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
-material_override = SubResource("StandardMaterial3D_o6mm1")
-mesh = SubResource("SphereMesh_3cr7o")
+version https://git-lfs.github.com/spec/v1
+oid sha256:d97fceaf007db6ace119938c7ea75d8a65b6e31f63f9af52e4391851c41bb08a
+size 496
